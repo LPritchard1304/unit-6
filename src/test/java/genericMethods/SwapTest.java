@@ -180,4 +180,14 @@ class SwapTest {
     public void testLargeLargeIndex() {
         testLargeIndex(new CharacterArrayGenerator(new CharacterScope()),1000);
     }
+
+    @Test
+    public void testEmpty() {
+        assertThrows(ArrayIndexOutOfBoundsException.class,()->Swap.swap(new Integer[0],0,0));
+    }
+
+    @Test
+    public void testNull() {
+        assertThrows(NullPointerException.class,()->Swap.swap(null,0,0));
+    }
 }

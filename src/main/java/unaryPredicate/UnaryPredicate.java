@@ -13,11 +13,11 @@ package unaryPredicate;
 public interface UnaryPredicate<T> {
 
     /**
-     * Test whether a given value satisifies this predicate's condition.
+     * Test whether a given value satisfies this predicate's condition.
      *
      * @param object the object to be tested
      * @return true iff the object satisfies this predicate's condition
      */
-    public boolean test(T object);
+    boolean test(T object);
 }
 
